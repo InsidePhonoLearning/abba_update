@@ -1,0 +1,149 @@
+#
+# Results on Monday February 03 2020 20:15:44 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36
+# Design number was non-random = 0
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,38,0,test_34,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,38,0,test_34,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,5889
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,25,0,test_21,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,25,0,test_21,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,4420
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,33,0,test_29,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,33,0,test_29,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,2179
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,48,0,test_44,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,48,0,test_44,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,1786
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,51,0,test_47,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,51,0,test_47,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,1514
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,27,0,test_23,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,27,0,test_23,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,2251
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,41,0,test_37,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,41,0,test_37,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,2150
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,11,0,test_7,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,11,0,test_7,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1851
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,23,0,test_19,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,23,0,test_19,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,889
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,42,0,test_38,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,42,0,test_38,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1657
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,29,0,test_25,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,29,0,test_25,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1725
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,30,0,test_26,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,30,0,test_26,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,900
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,12,0,test_8,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,12,0,test_8,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,2001
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,50,0,test_46,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,50,0,test_46,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1767
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,19,0,test_15,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,19,0,test_15,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,1576
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,6,0,test_2,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,6,0,test_2,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,1867
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,32,0,test_28,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,32,0,test_28,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1414
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,17,0,test_13,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,17,0,test_13,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,1007
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,49,0,test_45,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,49,0,test_45,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1441
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,45,0,test_41,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,45,0,test_41,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1427
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,28,0,test_24,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,28,0,test_24,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,1206
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,47,0,test_43,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,47,0,test_43,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,1213
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,44,0,test_40,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,44,0,test_40,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,784
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,10,0,test_6,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,10,0,test_6,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1148
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,14,0,test_10,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,14,0,test_10,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,990
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,34,0,test_30,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,34,0,test_30,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,2102
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,5,0,test_1,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,5,0,test_1,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,1484
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,13,0,test_9,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,13,0,test_9,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1379
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,21,0,test_17,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,21,0,test_17,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1007
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,52,0,test_48,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,52,0,test_48,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,1141
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,22,0,test_18,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,22,0,test_18,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,1584
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,35,0,test_31,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,35,0,test_31,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,1409
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,43,0,test_39,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,43,0,test_39,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,809
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,46,0,test_42,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,46,0,test_42,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1027
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,20,0,test_16,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,20,0,test_16,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,818
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,40,0,test_36,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,40,0,test_36,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1444
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,31,0,test_27,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,31,0,test_27,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1452
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,53,0,test_49,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,53,0,test_49,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1170
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,36,0,test_32,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,36,0,test_32,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1678
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,39,0,test_35,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,39,0,test_35,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,862
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,26,0,test_22,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,26,0,test_22,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,1746
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,16,0,test_12,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,16,0,test_12,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,1423
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,18,0,test_14,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,18,0,test_14,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,796
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,37,0,test_33,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,37,0,test_33,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,1547
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,4,0,test_0,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,4,0,test_0,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,891
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,7,0,test_3,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,7,0,test_3,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,1641
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,15,0,test_11,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,15,0,test_11,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,1,2249
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,8,0,test_4,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,8,0,test_4,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,No,0,882
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,9,0,test_5,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,9,0,test_5,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,0,2127
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,24,0,test_20,NULL,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,ComicCaption,24,0,test_20,NULL,<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>,Yes,1,905
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,train_description,i tried to follow the way it sounded if it followed any style of patter from the one before
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,part_of_word,the end part
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,test_description,40
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,aha_description,
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,prolific_id,5b9e96fef0741400010529f3
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,train_approach,yes
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,train_approach,yes
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,train_approach,no
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,train_approach,no
+1580760944,df90aa7aef71bddfc3bd7d63209251d9,Form,104,0,survey,NULL,aha_yesNo,0
