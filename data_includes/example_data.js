@@ -1,7 +1,7 @@
 //Condition variables:
 var test_run = false;
-var subj = "9"; //0-9
-var patt = "ref";//red or ref
+var subj = "0"; //0-9
+var patt = "red";//red or ref
 
 //Functions
 function shuffle(array) {
@@ -174,5 +174,3 @@ var defaults = [
     }
 ];
 
-
-&&&
