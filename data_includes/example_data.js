@@ -1,7 +1,7 @@
 //Condition variables:
 var test_run = false;
-var subj = "4"; //0-9
-var patt = "ref";//red or ref
+var subj = "7"; //0-9
+var patt = "red";//red or ref
 
 //Functions
 function shuffle(array) {
@@ -27,7 +27,7 @@ var exposure = [];
 var testing = [];
 var test_trials = [];
 var all_players = "";
-for (i = 0; i < test_stimuli.length; i++) { 
+for (i = 0; i < test_stimuli.length; i++) {
   this_exp = "<p>Listen carefully to the following word.</p><table align='center'><tr><td><audio style='display:none;' controls autoplay><source src='https://people.umass.edu/bprickett/RevRepStim/"+test_stimuli[i]+".wav' type='audio/wav'></audio></td></tr></table>"
   this_test = "<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>";
   all_players = all_players + "<audio style='display:none;' controls><source src='https://people.umass.edu/bprickett/RevRepStim/"+test_stimuli[i]+".wav' type='audio/wav'></audio>";
@@ -35,14 +35,14 @@ for (i = 0; i < test_stimuli.length; i++) {
   exposure.push(["exp_"+i, "my_Separator", {transfer: 3500, normalMessage:this_exp, ignoreFailure:true}]);
   test_trials.push(i);
 }
-shuffle(test_trials); 
-      
+shuffle(test_trials);
+
 
 //The sequence of trials:
 var items = [
                [
-                   "preload_audio", 
-                   "Message", 
+                   "preload_audio",
+                   "Message",
                    {
                        consentRequired: false,
                        html: "<div align='center'>Loading audio files...</div>"+all_players,
@@ -50,8 +50,8 @@ var items = [
                    }
                ],
                [
-                   "welcome_screen", 
-                   "Message", 
+                   "welcome_screen",
+                   "Message",
                    {
                        consentRequired: false,
                        html: [
@@ -63,7 +63,7 @@ var items = [
                                ["p", "The experiment needs a fast Internet connection (we recommend at least 3.2 Mbps download/1.44 Mbps upload)."],
                                ["p", "The words are hard to hear on a phone/tablet; please use a computer instead."],
                                ["p", ["i", "When you're ready to proceed, please any key."]],
-                               ["br"],  
+                               ["br"],
                                ["br"],
                                ["br"],
                                ["br"],
@@ -73,8 +73,8 @@ var items = [
                    }
                ],
                [
-                   "instructions", 
-                   "Message", 
+                   "instructions",
+                   "Message",
                    {
                        consentRequired: false,
                        html: [
@@ -83,7 +83,7 @@ var items = [
                                ["p", "The computer will play a nonsense word for you.  Some of these words fit a secret pattern; others do not.  Please decide whether the word you heard fits the pattern and click 'Yes' or 'No'.  The computer will then tell you whether your decision was right."],
                                ["p", "At first, you'll just be guessing, but if you pay attention to the nonsense words (especially, how they sound), you'll be able to figure out what the pattern is and get it right every time."],
                                ["p", "The experiment will end after you've either reached a certain number of consecutive right answers, or run out of words.  After that, there will be a short questionnaire about what methods you applied to finding the pattern."],
-                               ["p", ["i","When you're ready to begin, press any key."]] 
+                               ["p", ["i","When you're ready to begin, press any key."]]
                              ],
                        transfer: "keypress"
                    }
@@ -94,8 +94,8 @@ items = items.concat(testing);
 items = items.concat(exposure);
 items.push(   //End-of-experiment survey:
                 [
-                   "survey", 
-                   "Form", 
+                   "survey",
+                   "Form",
                    {
                        consentRequired: false,
                        html: "<h2>Please answer the following questions about your experience:</h2>"+
@@ -124,15 +124,15 @@ items.push(   //End-of-experiment survey:
               //Ending material
                ["sr", "__SendResults__", { }],
                [
-                   "end", 
-                   "Message", 
+                   "end",
+                   "Message",
                    {
                        transfer: 5000,
-                       html: "<div><p>Thanks for participating in this experiment! Click <a href='https://concept.linguistics.unc.edu/cgi-bin/abba-series/abba-01/finish.pl'>here</a> so that we can record your completion and give you the link for your compensation.</p></div>"        
+                       html: "<div><p>Thanks for participating in this experiment! Click <a href='https://concept.linguistics.unc.edu/cgi-bin/abba-series/abba-01/finish.pl'>here</a> so that we can record your completion and give you the link for your compensation.</p></div>"
                    }
                ]
             );
-            
+
 
 //Define sequence of experiment (train_trials is randomized above)
 my_sequence = ["preload_audio", "welcome_screen", "instructions"]
