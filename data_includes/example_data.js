@@ -1,7 +1,7 @@
 //Condition variables:
 var test_run = false;
 var subj = "49"; //0-9
-var patt = "ref";//red or ref
+var patt = "red";//red or ref
 
 //Functions
 function shuffle(array) {
@@ -29,7 +29,7 @@ var test_trials = [];
 var all_players = "";
 for (i = 0; i < test_stimuli.length; i++) {
   this_exp = "<p>Listen carefully to the following word.</p><table align='center'><tr><td><audio style='display:none;' controls autoplay><source src='https://people.umass.edu/bprickett/RevRepStim/"+test_stimuli[i]+".wav' type='audio/wav'></audio></td></tr></table>"
-  this_test = "<p align='center' style='font-weight:bold;'>Did that word sound like it followed the secret pattern?</p>";
+  this_test = "<p align='center' style='font-weight:bold;'>Did that word sound like it followed the pattern?</p>";
   all_players = all_players + "<audio style='display:none;' controls><source src='https://people.umass.edu/bprickett/RevRepStim/"+test_stimuli[i]+".wav' type='audio/wav'></audio>";
   testing.push(["test_"+i, "ComicCaption", {transfer: 0, s:"", q:this_test, html:"", hasCorrect:test_answers[i]}]);
   exposure.push(["exp_"+i, "my_Separator", {transfer: 3500, normalMessage:this_exp, ignoreFailure:true}]);
@@ -37,6 +37,23 @@ for (i = 0; i < test_stimuli.length; i++) {
 }
 shuffle(test_trials);
 
+//The part of the instructions that tells people their pattern:
+if (patt == "ref"){
+  var patt_name = "reversal.";
+  var patt_desc = "Each word that adheres to this pattern consists of three base syllables,"+
+                     " one pivot syllable, and the three base syllables again in the reverse order. For example, the word"+
+                     " 'baritodatoriba' would follow this pattern, since the first three syllables ('ba', 'ri', and 'to')"+
+                     " occur in the opposite order at the end of the word as they do in the beginning. However, the word"+
+                     " 'baritodaritoba' would not follow the pattern, since 'ritoba' is not 'barito' in reverse.";
+}
+if (patt == "red"){
+  var patt_name = "repetition.";
+  var patt_desc = "Each word that adheres to this pattern consists of three base syllables,"+
+                     " one pivot syllable, and a repetition of the three base syllables. For example, the word"+
+                     " 'baritodabarito' would follow this pattern, since the first three syllables ('ba', 'ri', and 'to')"+
+                     " occur in the same order at the end of the word as they do in the beginning. However, the word"+
+                     " 'baritodabatori' would not follow the pattern, since 'batori' is not a repetition of 'barito'.";  
+}
 
 //The sequence of trials:
 var items = [
@@ -56,7 +73,7 @@ var items = [
                        consentRequired: false,
                        html: [
                                "div",
-                               ["p", "Welcome!  This is an experiment about discovering patterns in the sounds of words. "],
+                               ["p", "Welcome!  This is an experiment about patterns in the sounds of words. "],
                                ["h3", "Participation"],
                                ["p", "To participate, you should be at least 18 years old, speak English as a first language, and have no diagnosed speech or hearing disorders."],
                                ["h3", "For best results"],
@@ -80,9 +97,9 @@ var items = [
                        html: [
                                "div",
                                ["h3", "What will happen"],
-                               ["p", "The computer will play a nonsense word for you.  Some of these words fit a secret pattern; others do not.  Please decide whether the word you heard fits the pattern and click 'Yes' or 'No'.  The computer will then tell you whether your decision was right."],
-                               ["p", "At first, you'll just be guessing, but if you pay attention to the nonsense words (especially, how they sound), you'll be able to figure out what the pattern is and get it right every time."],
-                               ["p", "The experiment will end after you've either reached a certain number of consecutive right answers, or run out of words.  After that, there will be a short questionnaire about what methods you applied to finding the pattern."],
+                               ["p", "The computer will play a nonsense word for you.  Some of these words fit a pattern; others do not.  Please decide whether the word you heard fits the pattern and click 'Yes' or 'No'.  The computer will then tell you whether your decision was right."],
+                               ["p", "The pattern you've been assigned is ", ["i", patt_name], patt_desc, " If you pay attention to the nonsense words (especially, how they sound), you'll be able to figure out whether each word matches your pattern."],
+                               ["p", "The experiment will end after you've run out of words.  After that, there will be a short questionnaire about what methods you applied when checking the words for your pattern."],
                                ["p", ["i","When you're ready to begin, press any key."]]
                              ],
                        transfer: "keypress"
@@ -100,18 +117,17 @@ items.push(   //End-of-experiment survey:
                        consentRequired: false,
                        html: "<h2>Please answer the following questions about your experience:</h2>"+
                               "<div>"+
-                                "<b>1) How did you approach the learning task? Please choose all that apply.</b><br>"+
-                                  '<input type="checkbox" name="train_approach" value="intuition_gut"> Went by intuition or gut feeling.<br>'+
-                                  '<input type="checkbox" name="train_approach" value="memorize"> Tried to memorize the words.<br>'+
-                                  '<input type="checkbox" name="train_approach" value="rule_pattern"> Tried to find a rule or pattern.<br>'+
+                                "<b>1) How did you approach the experiment task? Please choose all that apply.</b><br>"+
+                                  '<input type="checkbox" name="train_approach" value="intuition_gut"> Went by intuition or gut feeling<br>'+
+                                  '<input type="checkbox" name="train_approach" value="memorize"> Carefully listened to each syllable<br>'+
                                   '<input type="checkbox" name="train_approach" value="notes"> Took notes<br>'+
-                                "<br><b>2) Please describe what you did in as much detail as possible. If you looked for a rule, what rules did you try?</b><br><br>"+
+                                "<br><b>2) Please describe what you did in as much detail as possible.</b><br><br>"+
                                   '<textarea rows="4" cols="50" name="train_description"></textarea><br><br>'+
                                 "<br><b>2) Did you find yourself listening to a specific portion of each word when deciding how you would answer? If so, what part?</b><br><br>"+
                                   '<textarea rows="4" cols="50" name="part_of_word"></textarea><br><br>'+
                                 "<br><b>3) What percent of trials do you think you got right?</b><br><br>"+
                                   '<textarea rows="4" cols="50" name="test_description"></textarea><br><br>'+
-                                "<br><b>4) Did you have an “Aha!” moment, where you suddenly realized what the pattern was?</b><br>"+
+                                "<br><b>4) Did you have an “Aha!” moment, where you suddenly realized how to best decide whether a word followed the pattern?</b><br>"+
                                   '<input type="radio" name="aha_yesNo" value="1"> Yes<br>'+
                                   '<input type="radio" name="aha_yesNo" value="0"> No<br>'+
                                 "<br><b>5) If so, please describe the “aha!” moment. When did it happen? What exactly did you suddenly realize?</b><br><br>"+
