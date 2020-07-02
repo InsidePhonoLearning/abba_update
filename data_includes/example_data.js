@@ -1,6 +1,6 @@
 //Condition variables:
 var test_run = false;
-var subj = "49"; //0-9
+var subj = "0"; //0-9
 var patt = "red";//red or ref
 
 //Functions
@@ -70,7 +70,7 @@ if (patt == "red"){
                      ".</p>"+
                      "<p>If you pay attention to the nonsense words (especially, how they sound), you'll be able to figure out whether each word matches your pattern.</p>"+
                      "<p>The experiment will end after you've run out of words.  After that, there will be a short questionnaire about what methods you applied when checking the words for your pattern.</p>"+
-                     "<br><i>When you're ready to begin, press any key.</i>"; 
+                     "<br><i>When you're ready to begin, press any key.</i>";
 }
 
 //The sequence of trials:
