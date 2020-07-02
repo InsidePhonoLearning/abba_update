@@ -39,20 +39,38 @@ shuffle(test_trials);
 
 //The part of the instructions that tells people their pattern:
 if (patt == "ref"){
-  var patt_name = "reversal.";
-  var patt_desc = "Each word that adheres to this pattern consists of three base syllables,"+
-                     " one pivot syllable, and the three base syllables again in the reverse order. For example, the word"+
-                     " 'baritodatoriba' would follow this pattern, since the first three syllables ('ba', 'ri', and 'to')"+
+  var patt_desc = "<div><h3>What will happen</h3>"+
+                     "<p>The computer will play a nonsense word for you.  Some of these words fit a pattern; others do not.  Please decide whether the word you heard fits the pattern and click 'Yes' or 'No'.  The computer will then tell you whether your decision was right.</p>"+
+                     "<p>To participate, you should be at least 18 years old, speak English as a first language, and have no diagnosed speech or hearing disorders.</p>"+
+                     "<p>The pattern you've been assigned is <i>reversal</i>. Each word that adheres to this pattern consists of seven syllables, with the first three"+
+                     " repeating at the end in the reverse order. For example, the word"+
+                     " '<b><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:green;font-weight:bold;'>to</span>da<span style='color:green;font-weight:bold;'>to</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:red;font-weight:bold;'>ba</span></b>'"+
+                     " would follow this pattern, since the first three syllables ('<span style='color:red;font-weight:bold;'>ba</span>', '<span style='color:blue;font-weight:bold;'>ri</span>', and '<span style='color:green;font-weight:bold;'>to</span>')"+
                      " occur in the opposite order at the end of the word as they do in the beginning. However, the word"+
-                     " 'baritodaritoba' would not follow the pattern, since 'ritoba' is not 'barito' in reverse.";
+                     " '<b><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:green;font-weight:bold;'>to</span>da<span style='color:green;font-weight:bold;'>to</span><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span></b>'"+
+                     "  would not follow the pattern, since '<b><span style='color:green;font-weight:bold;'>to</span><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span></b>'"+
+                     " is not '<b><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:green;font-weight:bold;'>to</span></b>'"+
+                     " in reverse.</p>"+
+                     "<p>If you pay attention to the nonsense words (especially, how they sound), you'll be able to figure out whether each word matches your pattern.</p>"+
+                     "<p>The experiment will end after you've run out of words.  After that, there will be a short questionnaire about what methods you applied when checking the words for your pattern.</p>"+
+                     "<br><i>When you're ready to begin, press any key.</i>";
 }
 if (patt == "red"){
-  var patt_name = "repetition.";
-  var patt_desc = "Each word that adheres to this pattern consists of three base syllables,"+
-                     " one pivot syllable, and a repetition of the three base syllables. For example, the word"+
-                     " 'baritodabarito' would follow this pattern, since the first three syllables ('ba', 'ri', and 'to')"+
+  var patt_desc = "<div><h3>What will happen</h3>"+
+                     "<p>The computer will play a nonsense word for you.  Some of these words fit a pattern; others do not.  Please decide whether the word you heard fits the pattern and click 'Yes' or 'No'.  The computer will then tell you whether your decision was right.</p>"+
+                     "<p>To participate, you should be at least 18 years old, speak English as a first language, and have no diagnosed speech or hearing disorders.</p>"+
+                     "<p>The pattern you've been assigned is <i>repetition</i>. Each word that adheres to this pattern consists of seven syllables, with the first three"+
+                     " repeating at the end of the word. For example, the word"+
+                     " '<b><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:green;font-weight:bold;'>to</span>da<span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:green;font-weight:bold;'>to</span></b>'"+
+                     " would follow this pattern, since the first three syllables ('<span style='color:red;font-weight:bold;'>ba</span>', '<span style='color:blue;font-weight:bold;'>ri</span>', and '<span style='color:green;font-weight:bold;'>to</span>')"+
                      " occur in the same order at the end of the word as they do in the beginning. However, the word"+
-                     " 'baritodabatori' would not follow the pattern, since 'batori' is not a repetition of 'barito'.";  
+                     " '<b><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:green;font-weight:bold;'>to</span>da<span style='color:red;font-weight:bold;'>ba</span><span style='color:green;font-weight:bold;'>to</span><span style='color:blue;font-weight:bold;'>ri</span></b>'"+
+                     "  would not follow the pattern, since '<b><span style='color:red;font-weight:bold;'>ba</span><span style='color:green;font-weight:bold;'>to</span><span style='color:blue;font-weight:bold;'>ri</span></b>'"+
+                     " is not identical to '<b><span style='color:red;font-weight:bold;'>ba</span><span style='color:blue;font-weight:bold;'>ri</span><span style='color:green;font-weight:bold;'>to</span></b>'"+
+                     ".</p>"+
+                     "<p>If you pay attention to the nonsense words (especially, how they sound), you'll be able to figure out whether each word matches your pattern.</p>"+
+                     "<p>The experiment will end after you've run out of words.  After that, there will be a short questionnaire about what methods you applied when checking the words for your pattern.</p>"+
+                     "<br><i>When you're ready to begin, press any key.</i>"; 
 }
 
 //The sequence of trials:
@@ -94,14 +112,7 @@ var items = [
                    "Message",
                    {
                        consentRequired: false,
-                       html: [
-                               "div",
-                               ["h3", "What will happen"],
-                               ["p", "The computer will play a nonsense word for you.  Some of these words fit a pattern; others do not.  Please decide whether the word you heard fits the pattern and click 'Yes' or 'No'.  The computer will then tell you whether your decision was right."],
-                               ["p", "The pattern you've been assigned is ", ["i", patt_name], patt_desc, " If you pay attention to the nonsense words (especially, how they sound), you'll be able to figure out whether each word matches your pattern."],
-                               ["p", "The experiment will end after you've run out of words.  After that, there will be a short questionnaire about what methods you applied when checking the words for your pattern."],
-                               ["p", ["i","When you're ready to begin, press any key."]]
-                             ],
+                       html: patt_desc,
                        transfer: "keypress"
                    }
                ],
