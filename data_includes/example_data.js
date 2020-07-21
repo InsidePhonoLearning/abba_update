@@ -1,6 +1,6 @@
 //Condition variables:
 var test_run = false;
-var subj = "24"; //0-9
+var subj = "25"; //0-9
 var patt = "red";//red or ref
 
 //Functions
