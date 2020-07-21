@@ -155,7 +155,7 @@ items.push(   //End-of-experiment survey:
                    "Message",
                    {
                        transfer: 5000,
-                       html: "<div><p>Thanks for participating in this experiment! Click <a href='https://concept.linguistics.unc.edu/cgi-bin/abba-series/abba-01/finish.pl'>here</a> so that we can record your completion and give you the link for your compensation.</p></div>"
+                       html: "<div><p>Thanks for participating in this experiment! Click <a href='https://concept.linguistics.unc.edu/cgi-bin/abba-series/abba-02/finish.pl'>here</a> so that we can record your completion and give you the link for your compensation.</p></div>"
                    }
                ]
             );
